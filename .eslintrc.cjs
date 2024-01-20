@@ -5,7 +5,11 @@ module.exports = {
     },
     "extends": [
         "standard-with-typescript",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react-hooks/recommended',
+    './node_modules/ts-standard/eslintrc.json'
     ],
     "overrides": [
         {
@@ -23,7 +27,8 @@ module.exports = {
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
-        "sourceType": "module"
+        "sourceType": "module",
+        "project": "./tsconfig.json"
     },
     "plugins": [
         "react"
@@ -34,6 +39,9 @@ module.exports = {
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "@typescript-eslint.io/rules/explicit-function-return-type": "off",
         "@typescript-eslint.io/rules/explicit-function-return-type": "off",
+        'react-refresh/only-export-components': 'warn',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/no-floating-promises': 'off',
 
         
         "react/react-in-jsx-scope": "off"
