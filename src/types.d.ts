@@ -2,8 +2,8 @@ export interface Question {
   id: number
   question: string
   code: string
-  answer: string[]
-  correctAsnwer: number
+  answers: string[]
+  correctAnswer: number
   userSelectedAnswer?: number
   isCorrectUserAnswer?: boolean
 }
